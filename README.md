@@ -12,8 +12,12 @@ This repo starts with Linux fundamentals and scripting, and will grow to include
 devops/
 ├── Linux/
 │   ├── notes/                  # Core Linux notes, guides, and cheat sheets
-│   └── project(s)/             # Hands-on Linux-based automation projects
+│   └── projects/             # Hands-on Linux-based automation projects
 │       └── auto_provision/     # EC2 provisioning, firewall setup, and SSH hardening
+│       └── auto_monitor/       # System monitoring and alerting setup
+├── Git/
+│   ├── notes/                  # Git basics, SSH setup, and remote repo management
+│   └── projects/               # (coming soon) Git automation scripts and workflows
 ├── Docker/                     # (Coming soon) Containerization workflows
 ├── CI-CD/                      # (Coming soon) GitLab/Jenkins pipelines and automation
 ├── Kubernetes/                # (Coming soon) K8s manifests and cluster experiments
@@ -40,12 +44,27 @@ devops/
 
 
 ### ⚙️ Automation Projects
-- [`auto_provision`](Linux/project(s)/auto_provision/setup.sh): Bash script that provisions an EC2-like environment with:
+- [`auto_provision`](Linux/projects/auto_provision/setup.sh): Bash script that provisions an EC2-like environment with:
   - Secure user and group setup
   - UFW-based firewall configuration
   - Port control with dry-run support
   - SSH key setup
   - Logging and validations
+
+- [`auto_monitor`](Linux/projects/auto_monitor/setup.sh): Bash script that provisions a monitoring setup with:
+  - Full System Health Checks (Disk, Memory, CPU, Users, Services)
+  - Alerting when thresholds are breached (Disk > 80%, Memory < 20%, CPU Overload)
+  - Summary Report
+  - Cron-based Daemon Mode
+  - Log Management with Timestamped Logging
+  - Built-in Help Menu
+  - Clean Logging Format with [INFO] and [ERROR] tags
+
+---
+
+### 🔧 GIT Notes & Guides
+
+   - [Git Bascis](Git/notes/basic_commands.md)
 
 ---
 
