@@ -51,7 +51,7 @@ devops/
   - SSH key setup
   - Logging and validations
 
-- [`auto_monitor`](Linux/projects/auto_monitor/setup.sh): Bash script that provisions a monitoring setup with:
+- [`auto_monitor`](Linux/projects/auto_monitor/monitor.sh): Bash script that provisions a monitoring setup with:
   - Full System Health Checks (Disk, Memory, CPU, Users, Services)
   - Alerting when thresholds are breached (Disk > 80%, Memory < 20%, CPU Overload)
   - Summary Report
